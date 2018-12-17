@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8)
+project( Monet_count )
+find_package( OpenCV REQUIRED )
+include_directories( ${OpenCV_INCLUDE_DIRS} )
+add_executable( mc monet_count.cpp )
+target_link_libraries( mc ${OpenCV_LIBS} )
